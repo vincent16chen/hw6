@@ -82,30 +82,30 @@ function draw() {
   
   // bounce off right player
   if (ballX > width - playerWidth && ballY >= playerR && ballY <= playerR + playerHeight) {
-    ballX = width - playerWidth
-    ballXSpeed = -ballXSpeed
+    ballX = width - playerWidth;
+    ballXSpeed = -ballXSpeed;
   }
   
   // playerL scores!
   if (ballX > width) {
-    ballX = width/2
-    ballY = height/2
-    scoreL = scoreL + 1
-    ballXSpeed = - ballXSpeed 
+    ballX = width/2;
+    ballY = height/2;
+    scoreL = scoreL + 1;
+    ballXSpeed = - ballXSpeed;
   }
   
    // bounce off left player
   if (ballX < 0 + playerWidth && ballY >= playerL && ballY <= playerL + playerHeight) {
-    ballX = 0 + playerWidth
-    ballXSpeed = - ballXSpeed
+    ballX = 0 + playerWidth;
+    ballXSpeed = - ballXSpeed;
   }
   
   // playerR scores!
   if (ballX < 0) {
-    ballX = width/2
-    ballY = height/2
-    scoreR = scoreR + 1
-    ballXSpeed = - ballXSpeed 
+    ballX = width/2;
+    ballY = height/2;
+    scoreR = scoreR + 1;
+    ballXSpeed = - ballXSpeed;
   }
   
   // PlayerL score number
@@ -114,8 +114,5 @@ function draw() {
   
   // PlayerL score number
   textSize(48);
-  text(scoreR, width - 124, 75);
-  
-  
-  
+  text(scoreR, width - 124, 75);  
 }
